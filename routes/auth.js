@@ -2,12 +2,8 @@ const express = require("express");
 const router = express.Router();
 // const Cart = require("../models/cart");
 const User = require("../models/user");
-const Profile = require("../models/profile");
-const bcrypt = require("bcrypt");
-var jwt = require("jsonwebtoken");
 const axios = require("axios");
 const saltRounds = 10;
-const checkAuth = require("../middleware/validate");
 const stripe = require('stripe')('sk_test_deoTatB81pyglcyYapa7ztuC');
 
 
